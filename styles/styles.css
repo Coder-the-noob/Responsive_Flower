@@ -104,7 +104,6 @@ body{
     max-width: 1140px;
     margin: 60px auto;
     display: flex;
-    /* padding: 0 20px; */
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -139,13 +138,150 @@ body{
     height: auto;
 }
 
+/* Section: Plants */
+
+.plants-section {
+  max-width: 1140px;
+  margin: 60px auto;
+  padding: 0 20px;
+  text-align: center;
+  margin-bottom: 150px;
+}
+
+.section-header h2 {
+  font-size: 50px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.section-header p {
+  font-size: 16px;
+  max-width: 600px;
+  margin: 0 auto 40px;
+}
+
+.plants-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.plant-card {
+  background: #FFFFFF;
+  box-shadow: 0 0 10px #ddd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.plant-card img {
+  width: 270px;
+  height: 320px;
+  
+}
+
+.plant-card h3 {
+  margin: 10px 0 5px;
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.plant-card p {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.plant-card button {
+  background-color: #E95A08;
+  color: #FFFFFF;
+  border: none;
+  width: 100%;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  
+}
+
+.plant-card button:hover {
+  background-color: #cc5e12;
+}
+
+/* Section: Lover */
+
+.lover-section {
+  max-width: 1140px;
+  margin: 60px auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.lover-image {
+  position: relative;
+  flex: 1;
+}
+
+.lover-image img {
+  width: 100%;
+  height: 540px;
+  
+}
+
+.lover-content {
+  flex: 1;
+  
+}
+
+.lover-content h2 {
+  font-size: 50px;
+  margin-bottom: 16px;
+}
+
+
+
+.lover-content ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+
+/* Trusted Badge */
+.trusted-badge {
+  position: absolute;
+  top: -80px;
+  right: -70px;
+  width: 180px;
+  height: 160px;
+  z-index: 10;
+}
+
+.trusted-badge img {
+  width: 100%;
+  height: auto;
+  animation: spin 5s linear infinite;
+}
+
+/* Animation */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
 /* Mobile responsive */
 
 @media screen and (max-width: 576px) {
   
-body{
+ body{
     overflow-x: hidden;
-}
+ }
 
  .nav-list{
     display: none;
@@ -182,5 +318,34 @@ body{
     margin-left: -100px;
   }
 
-  
+ .plants-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .plant-card {
+    box-sizing: border-box;
+  }
+
+  .plant-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+        
+  }
+
+  .trusted-badge {
+    display: none;
+  }
+
+  .lover-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .lover-image,
+  .lover-content {
+    width: 100%;
+  }
 }
