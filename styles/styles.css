@@ -373,6 +373,55 @@ body{
       grid-row: 1 / 3;
 }
 
+/* subscribe section */
+  .subscribe-section {
+      width: 100%;
+      max-width: 1440px;
+      height: 533px;
+      margin: 0 auto;
+      background-image: url('/assets/news-letter-bg.png');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      position: relative;
+    }
+
+    .subscribe-section h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .subscribe-box {
+      display: flex;
+      width: 830px;
+      height: 50px;
+      background-color: white;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .subscribe-box input[type="email"] {
+      flex: 1;
+      padding: 1.5rem;
+      border: none;
+      outline: none;
+      font-size: 1rem;
+    }
+
+    .subscribe-box button {
+      background-color: #ef5e29;
+      color: white;
+      border: none;
+      padding: 0 2rem;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
 /* Mobile responsive */
 
 @media screen and (max-width: 576px) {
@@ -446,4 +495,39 @@ body{
   .lover-content {
     width: 100%;
   }
+ .latest-heading h1 {
+    font-size: 1.8rem;
+ }
+
+ .subscribe-section h2 {
+    font-size: 1.5rem;
+}
+
+ .subscribe-box {
+    width: 95%;
+    height: 50px;
+    flex-direction: row;
+}
+
+ .subscribe-box input[type="email"] {
+     padding: 1rem;
+    font-size: 0.9rem;
+}
+
+ .subscribe-box button {
+    width: auto;
+    padding: 0 1rem;
+    font-size: 0.9rem;
+}
+ .deals {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+
+ .deal1,
+ .deal2,
+ .deal3 {
+    grid-column: auto;
+    grid-row: auto;
+}
 }
