@@ -381,8 +381,8 @@ body{
       max-width: 1440px;
       height: 533px;
       margin: 0 auto;
-      background-image: url("../assets/news-letter-bg.png");
-      background-size: cover;
+      background-image: url("../assets/news_bg.png");
+       background-size: cover;
       background-position: center;
       color: white;
       display: flex;
