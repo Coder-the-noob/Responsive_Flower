@@ -377,11 +377,11 @@ body{
 
 /* subscribe section */
   .subscribe-section {
-      width: 100%;
+      /* width: 100%; */
       max-width: 1440px;
       height: 533px;
       margin: 0 auto;
-      background-image:url("/assets/news-letter-bg.PNG");
+      background-image:url("../assets/news-letter-bg.PNG");
       background-size: cover;
       background-position: center;
       color: white;
